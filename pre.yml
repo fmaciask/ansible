@@ -1,0 +1,4 @@
+- hosts: preproduction
+  tasks:
+    - name: make sure filebeat is running
+      service: name=filebeat state=started
